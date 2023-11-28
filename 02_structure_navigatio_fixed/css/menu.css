@@ -1,0 +1,62 @@
+#burger{
+    display:flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: transform .5s;
+}
+/* selecteur conditionnel qui selectionne l'element .conteneur uniquement si le case est checked
+   l'operateur ~ set a selectionner un element qui suit la case a cocher
+   
+   les operateurs de selection sonts:
+
+   espace : " "  qui permet de cibler les element a l'interieur d'un conteneur 
+   plus grand: " > " qui permet de icbler les element enfants du conteneur
+   plus: "+" qui permet de cibler les elements se trouvant apres un element primaire
+   signe weird: "~" qui permet de cibler le premier element suivant
+   
+   */
+
+#chk_burger:checked ~ .menu {
+    transform: translateX(0); /*position naturelle du menu*/
+}
+
+#chk_burger{
+    /*pour rendre le checkbox invisible*/
+    display:none;
+}
+
+#chk_burger:checked ~ #burger {
+    transform: rotate(90deg);
+}
+.menu{
+    display: none;
+    flex-direction: column;
+    position: relative;
+    transform: translateX(100%);/*position cache du menu*/
+    transition: transform ease .5s;
+    display: flex;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 105px;
+    gap: 3px;
+    padding: 10px;
+    margin-top: 35px;
+}
+.menu a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 80px;
+    padding: 5px;
+
+}
+
+#burger img {
+   width: 25px;
+}

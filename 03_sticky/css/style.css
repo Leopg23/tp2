@@ -1,0 +1,83 @@
+
+/*----------------------------------------------------------------------------------initialisation*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,::before,::after{
+    box-sizing: inherit;
+}
+
+body{
+display: flex;
+flex-direction: column;
+width: 100vw;
+font-family:"roboto",sans-serif;
+}
+
+/* .global = les conteneurs div autour de chaque section*/
+.global{
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    /*border: 1px solid #aaa;*/
+    min-height: 100vh;
+}
+
+.global footer,
+.global header,
+.global section{
+    flex:0 1 1000px;
+    /*border:1px solid #aaa;*/
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+#entete{ 
+    background-color: rgb(24, 84, 78);
+    min-height: 1vh;
+    color: white;
+    position:sticky;
+    top: 0;
+}
+
+#entete header{
+    justify-content: space-between;
+    align-items: center;
+    /*permet de definir le refenciel pour le menu */
+    position: relative;
+}
+
+#acceuil{
+    background-color: gold;
+}
+
+#inscription{
+    background-color: blueviolet;
+}
+
+#tableau{
+    background-color: darkgreen;
+}
+
+#article{
+    background-color: deeppink;
+}
+
+#galerie{
+    background-color: lightblue;
+}
+
+#video{
+    background-color: yellow;
+}
+
+.global section h1{
+    padding-top: 80px;
+}

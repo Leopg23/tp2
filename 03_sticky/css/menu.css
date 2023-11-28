@@ -1,0 +1,67 @@
+/*
+<input type="checkbox" id="chk_burger">
+            <label for="chk_burger" id="burger">
+                <img src="https://s2.svgbox.net/hero-solid.svg?ic=dots-vertical" width="32" height="32">
+            </label>
+*/
+
+/*
+<nav class="menu">
+<a href="#acceuil">Acceuil</a>
+<a href="#inscription">Inscription</a>
+<a href="#tableau">Tableau</a>
+<a href="#article">Article</a>
+<a href="#galerie">Galerie</a>
+<a href="#video">Video</a>
+</nav>
+*/
+
+
+#chk_burger:checked ~ #burger {
+    transform: rotate(-90deg);
+}
+
+#burger{
+    transition: transform .5s;
+    margin-right: 20px;
+    z-index: 7;
+}
+
+#chk_burger{
+    display: none;
+}
+
+#chk_burger:checked ~ .menu {
+    transform: translateX(0); /*position naturelle du menu*/    
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right:0;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: transform ease .5s;
+    transform: translateY(-100%);/*position cache du menu*/
+    z-index: -1;
+}
+.menu a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    width: 80px;
+    padding: 5px;
+}
+
+#mask{
+    position: absolute;
+    right: 0;
+    top:0;
+    background-color: rgb(21,66,62);
+    height: 79.67px;
+    width: 80px;
+    
+}
+
