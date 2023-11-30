@@ -1,0 +1,16 @@
+.galerie{
+    display:flex;
+}
+
+.galerie__figure{
+    display: flex;
+    flex-direction: column;
+}
+
+.galerie__caption{
+
+}
+
+.galerie__img{
+
+}
