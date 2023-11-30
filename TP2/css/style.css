@@ -55,19 +55,19 @@ font-family:"roboto",sans-serif;
 }
 
 #acceuil{
-    background-color: gold;
+    background-color: lightblue;
 }
 
 #inscription{
-    background-color: blueviolet;
+    background-color: cadetblue;
 }
 
 #tableau{
-    background-color: darkgreen;
+    background-color: lightblue;
 }
 
 #article{
-    background-color: deeppink;
+    background-color: cadetblue;
 }
 
 #galerie{
@@ -75,9 +75,13 @@ font-family:"roboto",sans-serif;
 }
 
 #video{
-    background-color: yellow;
+    background-color: cadetblue;
 }
 
 .global section h1{
     padding-top: 80px;
+}
+
+#piedpage{
+    min-height: 1vh;
 }
