@@ -1,4 +1,33 @@
-.galerie{
+/*
+<!-- section galerie -->
+        <div class="global" id="galerie">
+            <section>
+                <h1>Galerie</h1>
+                <figure class="galerie">
+                    <figure class="galerie__figure">
+                        <img class="galerie__img" src="images" alt="">
+                        <figcaption class="galerie__figcaption"></figcaption>
+                    </figure>
+                </figure>
+            </section>
+        </div>
+*/
+
+#galerie{
+    background-color: lightblue;
+}
+
+#galerie section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px ;
+}
+#galerie section h2{
+    padding-top: 100px;
+}
+
+.galeried{
     display:flex;
 }
 

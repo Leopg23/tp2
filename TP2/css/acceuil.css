@@ -1,0 +1,26 @@
+/*
+<!-- section acceuil -->
+        <div class="global" id="acceuil">
+            <section>
+                <h2>Acceuil</h2>
+                <h3>sous-titre</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut obcaecati cupiditate earum incidunt accusamus? Quisquam qui eveniet quasi, assumenda corporis aspernatur voluptas placeat maiores nemo eum nesciunt, sapiente laboriosam suscipit!</p>
+
+            </section>
+        </div>
+*/
+
+#acceuil{
+    background-color: lightblue;
+}
+
+#acceuil section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px ;
+}
+
+#acceuil section h2{
+    padding-top: 100px;
+}

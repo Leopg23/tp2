@@ -1,0 +1,25 @@
+/*
+<!-- section tableau -->
+        <div class="global" id="tableau">
+            <section>
+                <h2>Tableau</h2>
+                <h3>sous-titre</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut obcaecati cupiditate earum incidunt accusamus? Quisquam qui eveniet quasi, assumenda corporis aspernatur voluptas placeat maiores nemo eum nesciunt, sapiente laboriosam suscipit!</p>
+
+            </section>
+        </div>
+*/
+
+#tableau{
+    background-color: lightblue;
+}
+
+#tableau section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px ;
+}
+#tableau section h2{
+    padding-top: 100px;
+}

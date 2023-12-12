@@ -1,0 +1,37 @@
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 50px;
+}
+.formulaire label {
+
+}
+.formulaire input[type=text] {
+    width: 400px;
+}
+.etiquette_nom {
+
+}
+#inscription section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.form_chk {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.form_chk legend{
+    text-align: center;
+}
+.form_chk label {
+    padding-left: 20px;
+}
+
+#inscription h2{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 2em;
+}

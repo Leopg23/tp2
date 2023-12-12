@@ -39,24 +39,7 @@ font-family:"roboto",sans-serif;
     justify-content: center;
 }
 
-#entete{ 
-    background-color: rgb(24, 84, 78);
-    min-height: 1vh;
-    color: white;
-    position:sticky;
-    top: 0;
-}
 
-#entete header{
-    justify-content: space-between;
-    align-items: center;
-    /*permet de definir le refenciel pour le menu */
-    position: relative;
-}
-
-#acceuil{
-    background-color: lightblue;
-}
 
 #inscription{
     background-color: cadetblue;
@@ -78,10 +61,7 @@ font-family:"roboto",sans-serif;
     background-color: cadetblue;
 }
 
-.global section h1{
+.global section h{
     padding-top: 80px;
 }
 
-#piedpage{
-    min-height: 1vh;
-}
