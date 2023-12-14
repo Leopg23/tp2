@@ -36,6 +36,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   filter: contrast(150%);
 }
 
 #entete{ 
@@ -51,4 +52,9 @@
     align-items: center;
     /*permet de definir le refenciel pour le menu */
     position: relative;
+}
+
+#entete h1{
+    z-index: 7;
+    font-size: clamp(2.5rem, 3vw, 3rem);
 }

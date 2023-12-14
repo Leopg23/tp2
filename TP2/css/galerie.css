@@ -43,3 +43,9 @@
 .galerie__img{
 
 }
+
+#gradient{
+    width: clamp(150px, 100%, 1000px);
+    height: 50px;
+    background-image: linear-gradient(to right, red, yellow, blue);
+}

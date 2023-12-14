@@ -97,3 +97,13 @@
     justify-content: flex-start;
     background-color:rgba(0, 0, 0, 0);
 }
+
+#piedpage section h4{
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+.footer_conteneur_3 figure{
+    text-align: center;
+}
+#piedpage img{
+    width: clamp(32px, 10%, 64px);
+}
