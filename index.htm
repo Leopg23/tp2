@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projet Final</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/galerie.css">
+        <link rel="stylesheet" href="css/formulaire.css">
+        <link rel="stylesheet" href="css/entete.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/acceuil.css">
+        <link rel="stylesheet" href="css/tableau.css">
+        <link rel="stylesheet" href="css/video.css">
+        <link rel="stylesheet" href="css/article.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- section entete -->
+        <div class="global" id="entete">
+            <header>
+
+                <div class="entete__logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+
+                <h1>TP2</h1>
+
+            <div class="recherche__menu">   
+                <div class="recherche">
+                    <label for="barre_de_recherche">🔍</label>
+                    <input type="text" id="barre_de_recherche" placeholder="Recherchez">
+                </div>
+
+                <input type="checkbox" id="chk_burger">
+
+                <label for="chk_burger" id="burger">
+                    <img src="https://s2.svgbox.net/hero-solid.svg?ic=dots-vertical" width="32" height="32" alt="">
+                </label>
+            
+            <div class="entete__masque"></div>
+
+            <!-- section menu -->
+                <nav class="menu">
+                    <a href="#acceuil">Acceuil</a>
+                    <a href="#inscription">Inscription</a>
+                    <a href="#tableau">Tableau</a>
+                    <a href="#article">Article</a>
+                    <a href="#galerie">Galerie</a>
+                    <a href="#video">Video</a>
+                </nav>
+            </div>
+            </header>
+        </div>
+                    
+        <!-- section acceuil -->
+        <div class="global" id="acceuil">
+            
+            <section>
+                <div class="acceuil__titre">
+                <h2>TP2</h2>
+                </div>
+
+                <h2>Projet Final</h2>
+
+                <div>
+                    <h3>Codé par Léo Paquet-Gauthier</h3>
+                    <ul class="acceuil__liste">
+                        <li>582-1W1 - Mise en page Web</li>
+                        <li>Techniques d'intégration multimédia</li>
+                        <li>Collège de Maisonneuve</li>
+                        <li><a href="https://github.com/Leopg23/tp2">github</a></li>
+                        <li>Automne 2023</li>
+                    </ul>
+                </div>
+                
+            </section>
+        </div>
+
+        <!-- section inscription -->
+        <div class="global" id="inscription">
+            <section>
+                <h2>Inscription</h2>
+            <form class="formulaire">
+                <label for="input_nom">Nom:</label>
+                <input type="text" id="input_nom" placeholder="Votre nom de famille">
+                <label for="input_prenom">Prénom:</label>
+                <input type="text" id="input_prenom" placeholder="Votre prénom">
+                <label for="input_tell">Téléphone:</label>
+                <input type="text" id="input_tell" placeholder="Votre numéro de téléphone">
+                <fieldset class="form_chk">
+                    <legend>Les languages que vous maitrisez:</legend>
+                    <label for="input_html" class="etiquette_lang">HTML/CSS</label>
+                    <input type="checkbox" id="input_html">
+                    <label for="input_js" class="etiquette_js">JS</label>
+                    <input type="checkbox" id="input_js">
+                    <label for="input_php" class="etiquette_php">PHP</label>
+                    <input type="checkbox" id="input_php">
+                    <label for="input_sql" class="etiquette_sql">SQL</label>
+                    <input type="checkbox" id="input_sql">
+                </fieldset>
+                <input id="reinitialiser" type="reset" value="X">
+            </form>
+
+            </section>
+        </div>
+
+        <!-- section tableau -->
+        <div class="global" id="tableau">
+            <section>
+                <h2>Tableau</h2>
+                <div class="tableau__horaire">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>LUN</th>
+                            <th>MAR</th>
+                            <th>MER</th>
+                            <th>JEU</th>
+                            <th>VEN</th>
+                        </tr>
+                        <tr>
+                            <th>8h-9h</th>
+                            <td rowspan="2" class="lit">LITTERATURE</td><!--LUNDI-->
+                            <td></td><!--MARDI-->
+                            <td rowspan="3" class="ang">ANGLAIS</td><!--MERCREDI-->
+                            <td rowspan="3" class="photo">PHOTOSHOP</td><!--JEUDI-->
+                            <td></td><!--VENDREDI-->
+                        </tr>
+                        <tr>
+                            <th>9h-10h</th>
+                            <!--<td></td>--><!--LUNDI-->
+                            <td></td><!--MARDI-->
+                            <!--<td></td>--><!--MERCREDI-->
+                             <!--<td></td>--><!--JEUDI-->
+                            <td></td><!--VENDREDI-->
+                        </tr>
+                        <tr>
+                            <th>10h-11h</th>
+                            <td></td><!--LUNDI-->
+                            <td></td><!--MARDI-->
+                            <!--<td></td>--><!--MERCREDI-->
+                            <!--<td></td>--><!--JEUDI-->
+                            <td rowspan="2" class="video">VIDEO</td><!--VENDREDI-->
+                        </tr>
+                        <tr>
+                            <th>11h-12h</th>
+                            <td></td><!--LUNDI-->
+                            <td></td><!--MARDI-->
+                            <td rowspan="2" class="anim">ANIMATION</td><!--MERCREDI-->
+                            <td></td><!--JEUDI-->
+                            <!--<td></td>--><!--VENDREDI-->
+                        </tr>
+                        <tr>
+                            <th>12h-13h</th>
+                            <td rowspan="2" class="educ">EDUC</td><!--LUNDI-->
+                            <td rowspan="2">PAUSE COMMUNE</td><!--MARDI-->
+                            <!--<td></td>--><!--MERCREDI-->
+                            <td rowspan="2">PAUSE COMMUNE</td><!--JEUDI-->
+                            <td></td><!--VENDREDI-->
+                        </tr>
+                        <tr>
+                            <th>13h-14h</th>
+                            <!--<td></td>--><!--LUNDI-->
+                            <!--<td></td>--><!--MARDI-->
+                            <td></td><!--MERCREDI-->
+                            <!--<td></td>--><!--JEUDI-->
+                            <td></td><!--VENDREDI-->
+                        </tr>
+                        <tr>
+                            <th>14h-15h</th>
+                            <td></td><!--LUNDI-->
+                            <td rowspan="3" class="web">WEB</td><!--MARDI-->
+                            <td rowspan="3" class="video">VIDEO</td><!--MERCREDI-->
+                            <td rowspan="2" class="web">WEB</td><!--JEUDI-->
+                            <td rowspan="3" class="anim">ANIMATION</td><!--VENDREDI-->
+                        </tr>
+                        <tr>
+                            <th>15h-16h</th>
+                            <td rowspan="3" class="photo">PHOTOSHOP</td><!--LUNDI-->
+                            <!--<td></td>--><!--MARDI-->
+                            <!--<td></td>--><!--MERCREDI-->
+                            <!--<td></td>--><!--JEUDI-->
+                            <!--<td></td>--><!--VENDREDI-->
+                        </tr>
+                        <tr>
+                            <th>16h-17h</th>
+                            <!--<td></td>--><!--LUNDI-->
+                            <!--<td></td>--><!--MARDI-->
+                            <!--<td></td>--><!--MERCREDI-->
+                            <td rowspan="2" class="lit">LITTERATURE</td><!--JEUDI-->
+                            <!--<td></td>--><!--VENDREDI-->
+                        </tr>
+                        <tr>
+                            <th>17h-18h</th>
+                            <!--<td></td>--><!--LUNDI-->
+                            <td></td><!--MARDI-->
+                            <td></td><!--MERCREDI-->
+                            <!--<td></td>--><!--JEUDI-->
+                            <td></td><!--VENDREDI-->
+                        </tr>
+                        
+                    </table>
+                </div>
+            </section>
+        </div>
+
+       <!-- section article -->
+       <div class="global" id="article">
+            <section>
+                <h2>Article</h2>
+                <div class="article__div">
+                    <div>
+                        <h3>Premiere Photo du college de Maisonneuve</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut obcaecati cupiditate earum incidunt accusamus? Quisquam qui eveniet quasi, assumenda corporis aspernatur voluptas placeat maiores nemo eum nesciunt, sapiente laboriosam suscipit!</p>
+                    </div>
+
+                    <figure class="article__figure">
+                        <img src="images/maison_1.jpeg" alt="">
+                        <figcaption>Magnifique!</figcaption>
+                    </figure>
+                </div>
+                <div class="article__div">
+                    <div>
+                        <h3>Deuxieme Photo du college de Maisonneuve</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut obcaecati cupiditate earum incidunt accusamus? Quisquam qui eveniet quasi, assumenda corporis aspernatur voluptas placeat maiores nemo eum nesciunt, sapiente laboriosam suscipit!</p>
+                    </div>
+
+                    <figure class="article__figure">
+                        <img src="images/maison_2.jpeg" alt="">
+                        <figcaption>Extraordinaire!</figcaption>
+                    </figure>
+                </div>
+                <div class="article__div">
+                    <div>
+                        <h3>Troisieme Photo du college de Maisonneuve</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut obcaecati cupiditate earum incidunt accusamus? Quisquam qui eveniet quasi, assumenda corporis aspernatur voluptas placeat maiores nemo eum nesciunt, sapiente laboriosam suscipit!</p>
+                    </div>
+
+                    <figure class="article__figure">
+                        <img src="images/maison_3.jpeg" alt="">
+                        <figcaption>Epoustouflant!</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+
+        <!-- section galerie -->
+        <div class="global" id="galerie">
+            <section>
+                <h2>Galerie</h2>
+
+                <figure class="galerie">
+                    <figure class="galerie__figure">
+                        <figure>
+                            <img class="galerie__img" src="images/maison_1.jpeg" alt="">
+                            <figcaption class="galerie__figcaption"> Splendide</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="galerie__img" src="images/maison_2.jpeg" alt="">
+                            <figcaption class="galerie__figcaption"> Superbe</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="galerie__img" src="images/maison_3.jpeg" alt="">
+                            <figcaption class="galerie__figcaption"> Éblouissant</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="galerie__img" src="images/maison_4.jpg.webp" alt="">
+                            <figcaption class="galerie__figcaption"> Éblouissant</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="galerie__img" src="images/maison_5.jpg" alt="">
+                            <figcaption class="galerie__figcaption"> Ravissant   </figcaption>
+                        </figure> 
+                    </figure>
+                </figure>
+            </section>
+        </div> 
+
+        <!-- section video -->
+        <div class="global" id="video">
+            <section>
+                <h2>Video</h2>
+                <h3>5 videos pour apprendre a coder CSS</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=Qhaz36TZG5Y&t=1s">Cette video contient 10 tips css utiles !</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=phWxA89Dy94">Cette video apprend les flexbox en 8 minutes seulment</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=nSst4-WbEZk">Cette video simplifie super bien le "CSS box model"</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=iSWjmVcfQGg">Cette video est une superbe introduction a CSS</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=nwpARFlhjXQ&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=7">Cette video enseigne superbement le concepte de balise</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- section piedpage -->
+        <div class="global" id="piedpage">
+            <footer>
+                <!-- //////////////////////////////////// premiere ligne //////////////////////////-->
+            <div class="footer_conteneur_1">
+                <section class="footer_adresse">
+                    <h4>Adresse</h4>
+                    <ul>
+                        <li><a href="https://cmaisonneuve.qc.ca">Collège de Maisonneuve</a></li>
+                        <li>3800 Sherbrooke-est</li>
+                        <li>Montréal, QC, Canada</li>
+                        <li>H1X 2A2</li>
+                        <li>Téléphone: 514-254-7131</li>
+                    </ul>
+                </section>
+                <section class="footer_lien">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="#">css-tricks.com</a></li>
+                        <li><a href="#">mdn tableau</a></li>
+                        <li><a href="#">mdn linear-gradient</a></li>
+                        <li><a href="#">mdn clamp</a></li>
+                        <li><a href="#">mdn filter</a></li>
+                    </ul>
+                </section>
+                <section class="footer_texte">
+                    <h4>Texte</h4>
+                    <p>
+                        Le programme d'intégration multimédia forme à la création de projets numériques variés. Il enseigne la conception, l'intégration cohérente, et la planification de projets tout en mettant l'accent sur le travail d'équipe. Ce cursus prépare à une transition professionnelle réussie ou à des études universitaires dans le domaine du multimédia. </p>
+                </section>
+            </div>
+            <!-- //////////////////////////////////// deuxieme ligne //////////////////////////-->
+            <div class="footer_conteneur_2">
+                <section class="image">
+                    <h4>Images</h4>
+                    <figure>
+                        <img src="https://s2.svgbox.net/illlustrations.svg?ic=angler-fish&color=000000" width="64" height="64" alt="">
+                        <img src="https://s2.svgbox.net/illlustrations.svg?ic=cafe&color=000000" width="64" height="64" alt="">
+                        <img src="https://s2.svgbox.net/illlustrations.svg?ic=building&color=000000" width="64" height="64" alt="">
+                        <img src="https://s2.svgbox.net/illlustrations.svg?ic=angler-fish&color=000000" width="64" height="64" alt="">
+                        <img src="https://s2.svgbox.net/illlustrations.svg?ic=cafe&color=000000" width="64" height="64" alt="">
+                    </figure>
+                </section>
+                <section class="footer_lien">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="#">css-tricks.com</a></li>
+                        <li><a href="#">mdn tableau</a></li>
+                        <li><a href="#">mdn linear-gradient</a></li>
+                        <li><a href="#">mdn clamp</a></li>
+                        <li><a href="#">mdn filter</a></li>
+                    </ul>
+                </section>
+            </div>
+            <!-- //////////////////////////////////// troisieme ligne //////////////////////////-->
+            <div class="footer_conteneur_3">
+
+                <figure>
+                    <img src="https://s2.svgbox.net/hero-solid.svg?ic=currency-euro&color=000000" alt="">
+                    <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" alt="">
+                    <img src="https://s2.svgbox.net/social.svg?ic=google&color=000000" alt="">
+                    <img src="https://s2.svgbox.net/social.svg?ic=snapchat&color=000000" alt="">
+                </figure>
+            </div>
+            <h6>Avis de confidentialité | Privacy notice</h6>
+            </footer>
+        </div>
+    </body>
+</html>

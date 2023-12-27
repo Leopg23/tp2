@@ -1,0 +1,72 @@
+/*
+<!-- section inscription -->
+        <div class="global" id="inscription">
+            <section>
+                <h2>Inscription</h2>
+            <form action="" class="formulaire">
+                <label for="etiquette_nom" for="input_nom">Nom:</label>
+                <input type="text" id="input_nom" placeholder="Votre nom de famille">
+                <label for="etiquette_prenom" for="input_prenom">Prénom:</label>
+                <input type="text" id="input_prenom" placeholder="Votre prénom">
+                <label for="etiquette_tell" for="input_tell">Téléphone:</label>
+                <input type="text" id="input_tell" placeholder="Votre numéro de téléphone">
+                <fieldset class="form_chk">
+                    <legend>Les languages que vous maitrisez:</legend>
+                    <label for="input_html" class="etiquette_lang">HTML/CSS</label>
+                    <input type="checkbox" name="" id="input_html">
+                    <label for="input_js" class="etiquette_js">JS</label>
+                    <input type="checkbox" name="" id="input_js">
+                    <label for="input_php" class="etiquette_php">PHP</label>
+                    <input type="checkbox" name="" id="input_php">
+                    <label for="input_sql" class="etiquette_sql">SQL</label>
+                    <input type="checkbox" name="" id="input_sql">
+                </fieldset>
+                <input id="reinitialiser" type="reset" value="X">
+            </form>
+
+            </section>
+        </div>    
+*/
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 50px;
+}
+.formulaire label {
+
+}
+.formulaire input[type=text] {
+    width: 400px;
+}
+.etiquette_nom {
+
+}
+#inscription section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.form_chk {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.form_chk legend{
+    text-align: center;
+}
+.form_chk label {
+    padding-left: 20px  ;
+}
+
+#inscription h2{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 2em;
+}
+
+#reinitialiser{
+    background-color: red;
+    width: 20px;
+    margin-top: 20px;
+}

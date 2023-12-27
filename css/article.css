@@ -1,0 +1,87 @@
+/*
+<!-- section article -->
+       <div class="global" id="article">
+        <section>
+            <h2>Article</h2>
+            <div class="article__div">
+                <div>
+                    <h3>Premiere Photo du college de Maisonneuve</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut obcaecati cupiditate earum incidunt accusamus? Quisquam qui eveniet quasi, assumenda corporis aspernatur voluptas placeat maiores nemo eum nesciunt, sapiente laboriosam suscipit!</p>
+                </div>
+
+                <figure class="article__figure">
+                    <img src="images/maison_1.jpeg" alt="">
+                    <figcaption>Magnifique!</figcaption>
+                </figure>
+            </div>
+            <div class="article__div">
+                <div>
+                    <h3>Deuxieme Photo du college de Maisonneuve</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut obcaecati cupiditate earum incidunt accusamus? Quisquam qui eveniet quasi, assumenda corporis aspernatur voluptas placeat maiores nemo eum nesciunt, sapiente laboriosam suscipit!</p>
+                </div>
+
+                <figure class="article__figure">
+                    <img src="images/maison_2.jpeg" alt="">
+                    <figcaption>Extraordinaire!</figcaption>
+                </figure>
+            </div>
+            <div class="article__div">
+                <div>
+                    <h3>Troisieme Photo du college de Maisonneuve</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut obcaecati cupiditate earum incidunt accusamus? Quisquam qui eveniet quasi, assumenda corporis aspernatur voluptas placeat maiores nemo eum nesciunt, sapiente laboriosam suscipit!</p>
+                </div>
+
+                <figure class="article__figure">
+                    <img src="images/maison_3.jpeg" alt="">
+                    <figcaption>Epoustouflant!</figcaption>
+                </figure>
+            </div>
+        </section>
+    </div>
+*/
+
+#article{
+    background-color: cadetblue;
+}
+
+#article section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px ;
+}
+
+#article section h2{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 2em;
+}
+
+.article__div{
+    display: flex;
+}
+
+.article__figure{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article__figure img{
+    width: 300px;
+    box-shadow: 10px 10px 20px ;
+    border-radius: 10px;
+}
+
+.article__figure figcaption{
+    margin-top: 25px;
+}
+
+.article__div div{
+    width: 50%;
+}
+
+#article h3{
+    margin-bottom: 15px;
+}
