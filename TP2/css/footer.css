@@ -1,0 +1,109 @@
+/*
+<!-- section piedpage -->
+        <div class="global" id="piedpage">
+            <footer>
+                <!-- //////////////////////////////////// premiere ligne //////////////////////////-->
+            <div class="footer_conteneur_1">
+                <section class="footer_adresse">
+                    <h4>Adresse</h4>
+                    <ul>
+                        <li><a href="https://cmaisonneuve.qc.ca">Collège de Maisonneuve</a></li>
+                        <li>3800 Sherbrooke-est</li>
+                        <li>Montréal, QC, Canada</li>
+                        <li>H1X 2A2</li>
+                        <li>Téléphone: 514-254-7131</li>
+                    </ul>
+                </section>
+                <section class="footer_lien">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="#">css-tricks.com</a></li>
+                        <li><a href="#">mdn tableau</a></li>
+                        <li><a href="#">mdn linear-gradient</a></li>
+                        <li><a href="#">mdn clamp</a></li>
+                        <li><a href="#">mdn filter</a></li>
+                    </ul>
+                </section>
+                <section class="footer_texte"><h4>Texte</h4></section>
+            </div>
+            <!-- //////////////////////////////////// deuxieme ligne //////////////////////////-->
+            <div class="footer_conteneur_2">
+                <section class="image">
+                    <h4>Images</h4>
+                    <figure>
+                        <img src="https://s2.svgbox.net/illlustrations.svg?ic=angler-fish&color=000000" width="64" height="64">
+                        <img src="https://s2.svgbox.net/illlustrations.svg?ic=cafe&color=000000" width="64" height="64">
+                        <img src="https://s2.svgbox.net/illlustrations.svg?ic=building&color=000000" width="64" height="64">
+                        <img src="https://s2.svgbox.net/illlustrations.svg?ic=angler-fish&color=000000" width="64" height="64">
+                        <img src="https://s2.svgbox.net/illlustrations.svg?ic=cafe&color=000000" width="64" height="64">
+                    </figure>
+                </section>
+                <section class="footer_lien">
+                    <h4>Liens</h4>
+                    <li><a href="#">css-tricks.com</a></li>
+                        <li><a href="#">mdn tableau</a></li>
+                        <li><a href="#">mdn linear-gradient</a></li>
+                        <li><a href="#">mdn clamp</a></li>
+                        <li><a href="#">mdn filter</a></li>
+                </section>
+            </div>
+            <!-- //////////////////////////////////// troisieme ligne //////////////////////////-->
+            <div class="footer_conteneur_3">
+                
+                    
+                <figure>
+                    <img src="https://s2.svgbox.net/hero-solid.svg?ic=currency-euro&color=000000" width="32" height="32">
+                    <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="32" height="32">
+                    <img src="https://s2.svgbox.net/social.svg?ic=google&color=000000" width="32" height="32">
+                    <img src="https://s2.svgbox.net/social.svg?ic=snapchat&color=000000" width="32" height="32">
+                    
+                </figure>
+            
+            </div>
+            </footer>
+        </div>
+*/
+
+#piedpage > footer > div{
+    display: flex;
+    border-bottom: 1px solid black;
+}
+#piedpage > footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#piedpage > footer > div > section{
+    /*border: 1px dotted #666;*/
+}
+
+.footer_conteneur_3{
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer_adresse ul, .footer_lien ul{
+    list-style-type: none;
+}
+
+#piedpage{
+    min-height: 1vh;
+    background-color: lightblue;
+}
+
+#piedpage section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color:rgba(0, 0, 0, 0);
+}
+
+#piedpage section h4{
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+.footer_conteneur_3 figure{
+    text-align: center;
+}
+#piedpage img{
+    width: clamp(32px, 10%, 64px);
+}

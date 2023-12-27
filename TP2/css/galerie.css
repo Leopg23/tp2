@@ -1,0 +1,70 @@
+/*
+<!-- section galerie -->
+        <div class="global" id="galerie">
+            <section>
+                <h2>Galerie</h2>
+
+                <figure class="galerie">
+                    <figure class="galerie__figure">
+                        <div>
+                            <img class="galerie__img" src="images/maison_1.jpeg" alt="">
+                            <figcaption class="galerie__figcaption"> Splendide</figcaption>
+                        </div>
+                        <div>
+                            <img class="galerie__img" src="images/maison_2.jpeg" alt="">
+                            <figcaption class="galerie__figcaption"> Superbe</figcaption>
+                        </div>
+                        <div>
+                            <img class="galerie__img" src="images/maison_3.jpeg" alt="">
+                            <figcaption class="galerie__figcaption"> Éblouissant</figcaption>
+                        </div>
+                        <div>
+                            <img class="galerie__img" src="images/maison_4.jpg.webp" alt="">
+                            <figcaption class="galerie__figcaption"> Éblouissant</figcaption>
+                        </div>
+                        <div>
+                            <img class="galerie__img" src="images/maison_5.jpg" alt="">
+                            <figcaption class="galerie__figcaption"> Ravissant   </figcaption>
+                        </div> 
+                    </figure>
+                </figure>
+            </section>
+        </div>
+*/
+
+#galerie{
+    background-color: lightblue;
+}
+
+#galerie section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px ;
+}
+#galerie section h2{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 2em;
+}
+
+.galerie{
+    display:flex;
+    justify-content: center;
+}
+
+.galerie__figure{
+    display: flex;
+    flex-direction: column;
+}
+
+.galerie__figure div{
+    width: 300px;
+    height: 300px;
+}
+
+.galerie__figcaption{
+    text-align: center;
+}
+
+
